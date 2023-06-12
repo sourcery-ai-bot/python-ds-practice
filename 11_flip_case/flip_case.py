@@ -1,5 +1,4 @@
 def flip_case(phrase, to_swap):
-
     # listed_phrase = list(phrase)
     # for index, char in enumerate(listed_phrase):
     #     if char == to_swap.capitalize():
@@ -34,4 +33,5 @@ def flip_case(phrase, to_swap):
 
     """
 
-flip_case('Aaaahhh', 'h')
+
+flip_case("Aaaahhh", "h")

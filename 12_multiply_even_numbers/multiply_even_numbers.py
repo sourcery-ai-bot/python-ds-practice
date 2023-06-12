@@ -1,11 +1,12 @@
 import numpy
 
+
 def multiply_even_numbers(nums):
-    even_numbers = list(filter(lambda n : n % 2 == 0, nums))
+    even_numbers = list(filter(lambda n: n % 2 == 0, nums))
     product = numpy.prod(even_numbers)
     print(product)
 
-    
+
 multiply_even_numbers([2, 3, 4, 5, 6])
 
 
