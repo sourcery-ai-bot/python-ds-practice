@@ -15,9 +15,16 @@ def is_palindrome(phrase):
 
     Should ignore capitalization/spaces when deciding:
 
-        >>> is_palindrome('taco cat')
+        >>> c
         True
 
         >>> is_palindrome('Noon')
         True
     """
+    reversed_phrase = phrase.lower()[::-1]
+    if reversed_phrase == phrase:
+        return True
+    
+    return False
+
+print(is_palindrome('tacocat'))
