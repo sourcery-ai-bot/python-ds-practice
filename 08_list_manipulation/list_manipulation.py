@@ -1,27 +1,5 @@
 def list_manipulation(lst, command, location, value=None):
-    valid_commands = ["add", "remove"]
-    valid_locations = ["beginning", "end"]
-
-    if command not in valid_commands or location not in valid_locations:
-        print("Invalid entry, please try again.")
-        return None
-
-    if command == "remove":
-        if location == "beginning":
-            del lst[0]
-        elif location == "end":
-            lst.pop()
-
-    if command == "add":
-        if location == "beginning":
-            lst.insert(0, value)
-        elif location == "end":
-            lst.append(value)
-
-    print(lst)
-
-
-"""Mutate lst to add/remove from beginning or end.
+    """Mutate lst to add/remove from beginning or end.
 
     - lst: list of values
     - command: command, either "remove" or "add"
@@ -62,6 +40,27 @@ def list_manipulation(lst, command, location, value=None):
         >>> list_manipulation(lst, 'add', 'dunno') is None
         True
     """
+    valid_commands = ["add", "remove"]
+    valid_locations = ["beginning", "end"]
+
+    if command not in valid_commands or location not in valid_locations:
+        print("Invalid entry, please try again.")
+        return None
+
+    if command == "remove":
+        if location == "beginning":
+            del lst[0]
+        elif location == "end":
+            lst.pop()
+
+    if command == "add":
+        if location == "beginning":
+            lst.insert(0, value)
+        elif location == "end":
+            lst.append(value)
+
+    print(lst)
+
 
 family = ["Jerraill", "Sarah", "Nariayah", "Sierrah", "Lelah"]
 list_manipulation(family, "add", "en", "Duke")
