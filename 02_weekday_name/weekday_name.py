@@ -23,10 +23,7 @@ def weekday_name(day_of_week):
         "Saturday",
     )
 
-    if day_of_week < 0 or day_of_week > 7:
-        return None
-
-    return weekDays[day_of_week]
+    return None if day_of_week < 0 or day_of_week > 7 else weekDays[day_of_week]
 
 
 print(weekday_name(1))

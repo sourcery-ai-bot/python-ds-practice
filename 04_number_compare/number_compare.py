@@ -16,13 +16,13 @@ def number_compare(a, b):
         "Second is greater",
     )
 
-    if a != b:
-        if a > b:
-            print(greater_than)
-        else:
-            print(less_than)
-    else:
+    if a == b:
         print(equal)
+
+    elif a > b:
+        print(greater_than)
+    else:
+        print(less_than)
 
 
 number_compare(31, -1)
