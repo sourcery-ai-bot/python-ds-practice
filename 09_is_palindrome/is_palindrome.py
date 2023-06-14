@@ -22,10 +22,7 @@ def is_palindrome(phrase):
         True
     """
     reversed_phrase = phrase.lower()[::-1]
-    if reversed_phrase == phrase:
-        return True
-
-    return False
+    return reversed_phrase == phrase
 
 
 print(is_palindrome("tacocat"))

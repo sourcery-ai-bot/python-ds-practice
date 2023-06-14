@@ -1,3 +1,6 @@
+from collections import Counter
+
+
 def mode(nums):
     """Return most-common number in list.
 
@@ -11,3 +14,10 @@ def mode(nums):
         >>> mode([2, 2, 3, 3, 2])
         2
     """
+    counter = Counter(nums)
+    print(counter)
+    mode_value = counter.most_common(1)[0][0]
+    print(mode_value)
+
+
+mode([2, 2, 3, 3, 2, 3])
